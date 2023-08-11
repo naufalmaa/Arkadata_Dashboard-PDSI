@@ -1,0 +1,6 @@
+dash==2.9.3
+dash-core-component==2.0.0
+dash-iconify==0.1.2
+pandas==1.5.3
+fitz==0.0.1.dev2
+pymupdf==1.22.5
