@@ -7,8 +7,8 @@ import pandas as pd
 
 # create a dropdown for Status Column
 status_data = {
-    "status-start": ["IM", "WOP", "RTG", "OJ", "STB"],
-    "status-end": ["IM", "WOP", "RTG", "OJ", "STB"],
+    "status_start": ["IM", "WOP", "RTG", "OJ", "STB"],
+    "status_end": ["IM", "WOP", "RTG", "OJ", "STB"],
 }
 
 new_order_line = {
@@ -76,10 +76,10 @@ table = dash_table.DataTable(
     row_deletable=True,
     dropdown={
         "status_start": {
-            "options": [{"label": i, "value": i} for i in df_status["status-start"]]
+            "options": [{"label": i, "value": i} for i in df_status["status_start"]]
         },
         "status_end": {
-            "options": [{"label": i, "value": i} for i in df_status["status-end"]]
+            "options": [{"label": i, "value": i} for i in df_status["status_end"]]
         },
     },
 )
